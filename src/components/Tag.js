@@ -10,7 +10,7 @@ const Tag = () => {
 
     // const [gif, setGif] = useState("");
     // const [loading, setLoading] = useState(false);
-    
+
     // async function fetchData(){
     //     setLoading(true);
     //     const url = `https://api.giphy.com/v1/gifs/random?api_key=${API_KEY}&tag=${tag}`;
@@ -33,7 +33,7 @@ const Tag = () => {
         <h1 className='mt-[15px] text-2xl underline uppercase font-bold'>Random {tag} Gif</h1>
 
         {
-            loading ? (<Spinner></Spinner>) : (<img src={gif} width="450"/>) 
+            loading ? (<Spinner></Spinner>) : (<img src={gif} width="450" alt='gif'/>) 
         }
 
         <input 
